@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner's Guide to SSL Setup</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1>SSL Setup Guide</h1>
+            <div id="sslStatus" class="ssl-status">
+                <i class="fas fa-lock"></i>
+                <span id="sslText">Checking SSL status...</span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <h2>What is SSL?</h2>
+            <p>SSL (Secure Sockets Layer) is like a secret code that keeps your website's data safe while it travels across the internet.</p>
+        </section>
+
+        <section class="steps">
+            <h2>Step-by-Step Guide</h2>
+            <div class="step-container">
+                <div class="step">
+                    <h3>1. Understand SSL</h3>
+                    <p>SSL creates a secure connection between your website and visitors. It's like having a private conversation instead of shouting in a public place.</p>
+                </div>
+
+                <div class="step">
+                    <h3>2. Choose a Hosting Service</h3>
+                    <p>Popular options that support SSL:</p>
+                    <ul>
+                        <li><a href="https://vercel.com" target="_blank">Vercel</a> - Super easy SSL setup</li>
+                        <li><a href="https://netlify.com" target="_blank">Netlify</a> - Automatic SSL certificates</li>
+                        <li><a href="https://pages.github.com" target="_blank">GitHub Pages</a> - Free SSL through Cloudflare</li>
+                    </ul>
+                </div>
+
+                <div class="step">
+                    <h3>3. Get Your SSL Certificate</h3>
+                    <p>Most hosting services offer free SSL certificates. You don't need to pay!</p>
+                </div>
+
+                <div class="step">
+                    <h3>4. Verify Your Setup</h3>
+                    <p>Check if your SSL is working:</p>
+                    <ul>
+                        <li>Look for the padlock icon in your browser</li>
+                        <li>URL should start with HTTPS://</li>
+                        <li>Check the SSL status above</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="verification">
+            <h2>SSL Verification Checklist</h2>
+            <div class="checklist">
+                <div class="check-item">
+                    <input type="checkbox" id="check1">
+                    <label for="check1">URL starts with HTTPS://</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="check2">
+                    <label for="check2">Padlock icon visible in browser</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="check3">
+                    <label for="check3">No browser security warnings</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="check4">
+                    <label for="check4">SSL status verified above</label>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Made with ❤️ for beginners. Learn more about <a href="https://letsencrypt.org" target="_blank">Let's Encrypt</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
